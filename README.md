@@ -8,10 +8,17 @@ O arquivo first_class.rb contém exemplos básicos de sintaxe Ruby, incluindo co
 
 - **puts**: Utilizado para imprimir mensagens no terminal, adicionando automaticamente uma nova linha após a mensagem.
   
-Exemplo: puts "Bem Vindos ao Ruby"
+Exemplo: 
+```ruby
+puts "Bem Vindos ao Ruby"
+```
+
 - **print**: Também imprime mensagens no terminal, mas não adiciona uma nova linha automaticamente.
   
-Exemplo: print "Outra forma de imprimir"
+Exemplo: 
+```ruby
+print "Outra forma de imprimir"
+```
 
 ### Operações Matemáticas
 
