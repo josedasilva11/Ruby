@@ -6,22 +6,31 @@ O arquivo first_class.rb contém exemplos básicos de sintaxe Ruby, incluindo co
 
 ### Impressão no Terminal
 
-- puts: Utilizado para imprimir mensagens no terminal, adicionando automaticamente uma nova linha após a mensagem.
+- *puts*: Utilizado para imprimir mensagens no terminal, adicionando automaticamente uma nova linha após a mensagem.
+- 
 Exemplo: puts "Bem Vindos ao Ruby"
-- print: Também imprime mensagens no terminal, mas não adiciona uma nova linha automaticamente.
+- *print*: Também imprime mensagens no terminal, mas não adiciona uma nova linha automaticamente.
+- 
 Exemplo: print "Outra forma de imprimir"
+
 ### Operações Matemáticas
+
 - Demonstração de como realizar operações matemáticas básicas como adição, subtração, multiplicação e divisão.
+  
 Exemplo: 100.0 + 10.0 * 2.0 / 3.0 - 2.0
 
 ### Trabalhando com Variáveis
+
 - Introdução ao conceito de variáveis, que são utilizadas para armazenar dados.
   
 Exemplo:
+
 age = 29
 name = " Zé "
 actual_year = 2024
-Uso de variáveis em operações, como na subtração da idade pelo ano atual.
+
+- Uso de variáveis em operações, como na subtração da idade pelo ano atual.
+- 
 Exemplo: puts age - actual_year
 
 ### Comentários
