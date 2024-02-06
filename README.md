@@ -1,5 +1,22 @@
 # Ruby
 
+## Índice
+
+1. [Conteúdo da Primeira Aula](#conteúdo-da-primeira-aula)
+   - [Impressão no Terminal](#impressão-no-terminal)
+   - [Operações Matemáticas](#operações-matemáticas)
+   - [Trabalhando com Variáveis](#trabalhando-com-variáveis)
+   - [Comentários](#comentários)
+   - [Objetivo da Aula](#objetivo-da-aula)
+2. [Conteúdo da Segunda Aula](#conteúdo-da-segunda-aula)
+   - [Strings](#strings)
+   - [Números e Operações Aritméticas](#números-e-operações-aritméticas)
+   - [Variáveis](#variáveis)
+   - [Objetivo da Aula](#objetivo-da-aula-1)
+
+
+
+
 ## Conteúdo da Primeira Aula
 
 O arquivo first_class.rb contém exemplos básicos de sintaxe Ruby, incluindo como imprimir mensagens no terminal, realizar operações matemáticas e trabalhar com variáveis. 
