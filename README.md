@@ -112,7 +112,6 @@ puts 10 ** 2 # 10 ao quadrado
 
 - **Uso Avançado de Variáveis**: Mostra como variáveis podem ser usadas para armazenar valores e realizar cálculos complexos, especialmente em contextos de aplicação prática como o cálculo de custos ou a contagem de itens.
 
-Exemplo:
 
 Exemplo:
 ```ruby
