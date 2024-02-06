@@ -1,6 +1,6 @@
 # Ruby
 
-## Conteúdo do Arquivo first_class.rb
+## Conteúdo da Primeira Aula
 
 O arquivo first_class.rb contém exemplos básicos de sintaxe Ruby, incluindo como imprimir mensagens no terminal, realizar operações matemáticas e trabalhar com variáveis. 
 
