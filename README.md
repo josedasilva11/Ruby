@@ -162,7 +162,7 @@ O arquivo third_class.rb aprofunda o conhecimento em Ruby, focando em estruturas
 
 Exemplo Prático: 
 
-Verificação do tipo de vírus armazenado em uma variável e impressão de mensagens relevantes com base nesse valor.
+Verificação do tipo de vírus armazenado numa variável e impressão de mensagens relevantes com base nesse valor.
 
 ```ruby
 virus = "rootkit"
@@ -201,7 +201,7 @@ puts 100 != "100"       # Imprime true
 
 - **Verificação de URLs Seguros**: Mostra como usar o método start_with? para verificar se um site utiliza HTTPS, indicando que é seguro.
 
-- **Validação de Email**: Ensina a usar o método include? para verificar a presença do símbolo "@" em um endereço de email, e end_with? para verificar o domínio de um email.
+- **Validação de Email**: Ensina a usar o método include? para verificar a presença do símbolo "@" num endereço de email, e end_with? para verificar o domínio de um email.
 
 Exemplo: Verificação de URL Segura
 
@@ -233,7 +233,7 @@ end
 
 ### Operadores and e or
 
--  **Lógica Booleana**: Demonstra o uso de && (and) e || (or) para combinar múltiplas condições em uma única estrutura condicional.
+-  **Lógica Booleana**: Demonstra o uso de && (and) e || (or) para combinar múltiplas condições numa única estrutura condicional.
 
 
 ```ruby
