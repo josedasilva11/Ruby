@@ -19,6 +19,11 @@
    - [Segurança Online Básica](#segurança-online-basica)
    - [Operadores and e or](#operadores-and-e-or)
    - [Objetivo da Aula](#objetivo-da-aula-2)
+4. [Conteúdo da Quarta Aula](#conteúdo-da-quarta-aula)
+   - [Autenticação de Usuário](#autenticaçao-de-usuario)
+   - [Autenticação de um Router](#autenticaçao-de-um-router)
+   - [Estrutura de Decisão com "case"](#estrutura-de-decisao-com-"case")
+   - [Objetivo da Aula](#objetivo-da-aula-3)
 
 
 
@@ -162,7 +167,7 @@ O arquivo third_class.rb aprofunda o conhecimento em Ruby, focando em estruturas
 
 Exemplo Prático: 
 
-Verificação do tipo de vírus armazenado numa variável e impressão de mensagens relevantes com base nesse valor.
+Verificação do tipo de vírus armazenado em uma variável e impressão de mensagens relevantes com base nesse valor.
 
 ```ruby
 virus = "rootkit"
@@ -201,7 +206,7 @@ puts 100 != "100"       # Imprime true
 
 - **Verificação de URLs Seguros**: Mostra como usar o método start_with? para verificar se um site utiliza HTTPS, indicando que é seguro.
 
-- **Validação de Email**: Ensina a usar o método include? para verificar a presença do símbolo "@" num endereço de email, e end_with? para verificar o domínio de um email.
+- **Validação de Email**: Ensina a usar o método include? para verificar a presença do símbolo "@" em um endereço de email, e end_with? para verificar o domínio de um email.
 
 Exemplo: Verificação de URL Segura
 
@@ -233,7 +238,7 @@ end
 
 ### Operadores and e or
 
--  **Lógica Booleana**: Demonstra o uso de && (and) e || (or) para combinar múltiplas condições numa única estrutura condicional.
+-  **Lógica Booleana**: Demonstra o uso de && (and) e || (or) para combinar múltiplas condições em uma única estrutura condicional.
 
 
 ```ruby
@@ -254,3 +259,105 @@ puts virus == "rootkit" && 10 > 5  # Imprime true se virus for igual a "rootkit"
 
 Esta aula tem como objetivo ensinar aos alunos como utilizar estruturas condicionais para fazer lógica de decisão em Ruby, compreender e aplicar tipos de dados booleanos, e introduzir conceitos básicos de segurança online. Os exemplos práticos fornecem uma base sólida para entender como a lógica de programação pode ser aplicada para resolver problemas cotidianos e tomar decisões com base em dados variáveis.
 
+## Conteúdo da Quarta  Aula
+
+O arquivo fourth_class.rb aborda conceitos avançados de controle de fluxo em Ruby, focando em autenticação de usuários e estruturas de decisão mais complexas, como o uso do case. Aqui está um resumo detalhado do conteúdo coberto:
+
+### Autenticação de Usuário
+
+- **Sistema Simples de Login**: Introdução à lógica básica de autenticação, demonstrando como verificar se o nome do usuário e a senha fornecidos correspondem aos valores armazenados.
+
+```ruby
+utilizador = "Jose"
+senha = 123456
+
+if utilizador == "Jose" && senha == 123456
+  puts "Login Efetuado com sucesso"
+else
+  sleep 1.0
+  puts "Os seus dados estão incorrectos, tente novamente"
+end
+
+
+
+```
+
+- **Mensagens de Erro Específicas**: Mostra como fornecer feedback mais detalhado ao usuário, indicando se o erro está no nome de usuário ou na senha.
+
+
+
+
+```ruby
+if utilizador != "Jose"
+  puts "O seu nome de utilizador está incorreto."
+elsif senha != "123456"
+  puts "A senha que inseriu está incorrecta."
+else 
+  puts "Login Efetuado com sucesso"
+end
+
+
+```
+
+- **Interagindo com o Usuário**: Ensina a solicitar ao usuário que insira seu nome de usuário e senha, melhorando a interação com o programa.
+
+```ruby
+print "Insira o seu nome de utilizador: "
+nome_utilizador = gets.chomp
+
+print "Insira a sua senha: "
+senha_utilizador = gets.chomp
+```
+
+### Autenticação de um Router
+
+- **Simulação de Autenticação de Router**: Implementação de um sistema de autenticação simples para simular o login em um router, utilizando comparações de strings para validar o acesso.
+
+
+
+
+```ruby
+email_armazenado = "usuario@example.com"
+senha_armazenada = "senha123"
+
+puts "Por favor, insira seu email:"
+email_usuario = gets.chomp
+
+puts "Por favor, insira sua senha:"
+senha_usuario = gets.chomp
+
+if email_usuario == email_armazenado && senha_usuario == senha_armazenada
+  puts "Acesso permitido"
+else
+  puts "Acesso negado"
+end
+
+```
+
+### Estrutura de Decisão com "case"
+
+- **Uso do case para Controle de Fluxo**: Explicação de como utilizar a estrutura case para executar diferentes blocos de código com base em um valor específico de uma variável, aplicado no contexto de monitoramento de carga de uma UPS.
+
+```ruby
+
+ups = 34
+
+case ups
+when 0
+  puts "A ups nao tem carga"
+when 1..25
+  puts "A ups tem pouca carga #{ups}%"
+when 26..50
+  puts "A ups tem carga suficiente #{ups}%"
+when 51..100
+  puts "Não precisa de se preocupar com a carga da ups #{ups}%"
+else
+  puts "Algo se passa com a ups verifique se faz favor."
+end
+
+```
+
+
+### Objetivo da Aula
+
+Esta aula visa consolidar o entendimento dos alunos sobre controle de fluxo em Ruby, apresentando cenários reais de aplicação, como sistemas de autenticação. Através de exercícios práticos, os alunos aprendem a aplicar estruturas condicionais e case para criar programas mais interativos e responder a diferentes condições de maneira eficaz.
