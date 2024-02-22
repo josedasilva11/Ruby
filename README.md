@@ -361,3 +361,244 @@ end
 ### Objetivo da Aula
 
 Esta aula visa consolidar o entendimento dos alunos sobre controle de fluxo em Ruby, apresentando cenários reais de aplicação, como sistemas de autenticação. Através de exercícios práticos, os alunos aprendem a aplicar estruturas condicionais e case para criar programas mais interativos e responder a diferentes condições de maneira eficaz.
+
+
+## Conteúdo da Quinta Aula
+
+O arquivo fifth_class.rb introduz os conceitos de funções ou métodos, estruturas de dados como arrays e hashes, e práticas de loop, além de propor exercícios práticos para a aplicação desses conceitos. Aqui está um resumo detalhado do conteúdo coberto:
+
+
+### Funções ou Métodos
+
+
+- **Introdução a Funções**: Explica como criar funções em Ruby para executar blocos de código específicos de forma independente dentro do programa. As funções podem ser chamadas em qualquer ponto do programa onde seja necessário utilizar sua funcionalidade.
+
+**Exemplos de Funções**: Apresenta várias funções, como uma função que imprime o nome de um ransomware, funções para realizar operações matemáticas como soma e divisão, e uma função para determinar se um número é par ou ímpar.
+
+
+
+```ruby
+def nome_ransomware
+  puts "Wannacry"
+end
+
+def soma(numero1, numero2)
+  resultado = numero1 + numero2
+  puts resultado
+end
+
+def numero_virus_computadores(numero_virus, numero_computadores)
+  resultado = numero_virus / numero_computadores
+  return resultado
+end
+
+def numero_par_impar(numero)
+  if numero % 2 == 0
+    return "O numero #{numero} é par."
+  else
+    return "O numero #{numero} é impar."
+  end
+end
+
+
+``` 
+
+
+### Arrays
+
+
+- **Trabalho com Arrays**: Demonstra como criar, manipular e iterar sobre arrays em Ruby. Inclui exemplos de como adicionar e remover elementos, acessar elementos através de índices, e percorrer arrays usando loops.
+
+Criação de Arrays:
+
+```ruby
+array_numeros = [1, 2, 3, 4, 5]
+array_strings = ["Ruby", "Python", "JavaScript"]
+
+
+``` 
+Adicionar Elementos:
+
+```ruby
+
+array_numeros.push(6) # Adiciona o número 6 no final do array
+array_strings << "Java" # Outra forma de adicionar um elemento no final
+
+``` 
+Remover Elementos:
+
+```ruby
+array_numeros.pop # Remove o último elemento do array
+array_strings.delete_at(2) # Remove o elemento no índice 2 (JavaScript)
+
+
+``` 
+Acessar Elementos:
+
+```ruby
+puts array_numeros[0] # Acessa o primeiro elemento do array
+puts array_strings[1] # Acessa o segundo elemento do array
+
+
+``` 
+Iterar sobre Arrays:
+
+```ruby
+array_numeros.each do |numero|
+  puts numero
+end
+
+
+``` 
+
+
+
+
+
+
+
+
+### Hashes
+
+
+- **Introdução a Hashes**: Ensina a criar e manipular hashes, que são estruturas de dados que armazenam pares de chaves e valores. Os exemplos mostram como adicionar e remover pares chave-valor, além de como percorrer um hash.
+
+
+Criação de Hashes:
+```ruby
+hash = {"nome" => "João", "idade" => 30}
+hash_simbolos = {:nome => "Ana", :idade => 25} # Usando símbolos como chaves
+
+
+``` 
+
+Adicionar Pares Chave-Valor:
+```ruby
+hash["profissão"] = "Desenvolvedor"
+hash_simbolos[:profissao] = "Designer"
+
+
+``` 
+Remover Pares Chave-Valor:
+
+```ruby
+hash.delete("idade")
+hash_simbolos.delete(:idade)
+
+
+``` 
+Percorrer um Hash:
+
+```ruby
+
+hash.each do |chave, valor|
+  puts "#{chave}: #{valor}"
+end
+
+``` 
+
+### Loops
+
+- **Uso de Loops**: Explica como utilizar estruturas de loop como while e for para executar repetidamente blocos de código. Inclui um exercício que simula um ataque brute-force para adivinhar um PIN de 4 dígitos.
+
+Loop While:
+
+```ruby
+contador = 0
+while contador < 5
+  puts contador
+  contador += 1
+end
+
+
+``` 
+
+Loop For:
+
+```ruby
+for numero in 1..5
+  puts numero
+end
+
+
+``` 
+
+
+
+
+### Exercícios Práticos
+
+
+- **Gerador de Senhas**: Um exercício que desafia o aluno a escrever uma função para gerar uma senha aleatória de 16 caracteres, incluindo letras maiúsculas, minúsculas e números.
+
+
+```ruby
+
+def gerar_senha(tamanho)
+  caracteres = ("a".."z").to_a + ("A".."Z").to_a + ("0".."9").to_a
+  senha = ""
+  tamanho.times { senha << caracteres.sample }
+  senha
+end
+
+puts gerar_senha(16)
+
+
+``` 
+
+- **Análise de Logs de Segurança**: Propõe um exercício para percorrer um array de logs de eventos de segurança e imprimir apenas os logs de eventos bem-sucedidos, identificados pelo código "200".
+
+
+```ruby
+logs = ["Evento 400", "Evento 200", "Evento 404", "Evento 500", "Evento 200"]
+
+logs.each do |log|
+  puts log if log.include?("200")
+end
+
+``` 
+
+
+
+- **Contagem de Ocorrências**: Solicita ao aluno que escreva um programa para contar quantas vezes cada senha ocorre em um array e armazene os resultados em um hash.
+
+```ruby
+senhas = ["1234", "senha", "1234", "admin", "senha"]
+contagem = Hash.new(0)
+
+senhas.each { |senha| contagem[senha] += 1 }
+contagem.each { |senha, total| puts "#{senha}: #{total}" }
+
+
+``` 
+
+
+
+- **Simulador Brute-Force**: Um exercício desafiador que pede para simular um ataque brute-force para adivinhar um PIN de 4 dígitos, imprimindo o PIN correto e o número de tentativas necessárias.
+
+```ruby
+pin_correto = "1234"
+tentativa = 0
+encontrado = false
+
+while tentativa <= 9999 && !encontrado
+  pin_tentado = tentativa.to_s.rjust(4, "0")
+  if pin_tentado == pin_correto
+    encontrado = true
+    puts "PIN correto: #{pin_tentado}"
+  end
+  tentativa += 1
+end
+
+puts "Tentativas: #{tentativa}"
+
+
+``` 
+
+
+
+### Objetivo da Aula
+
+
+Esta aula tem como objetivo aprofundar o conhecimento dos alunos em Ruby, introduzindo conceitos avançados como funções ou métodos, arrays, hashes, e loops. Através de exemplos claros e exercícios práticos, os alunos aprendem a estruturar melhor seus programas, realizar operações complexas e manipular diferentes tipos de dados. Estes conceitos são fundamentais para a construção de programas mais sofisticados e eficientes.
+
