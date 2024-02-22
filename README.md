@@ -24,6 +24,17 @@
    - [Autenticação de um Router](#autenticaçao-de-um-router)
    - [Estrutura de Decisão com "case"](#estrutura-de-decisao-com-"case")
    - [Objetivo da Aula](#objetivo-da-aula-3)
+5. [Conteúdo da Quinta Aula](#conteúdo-da-quinta-aula)
+   - [Funções e Métodos](#funções-e-métodos)
+   - [Arrays](#arrays)
+   - [Hashes](#hashes)
+   - [Loops](#loops)
+   - [Exercícios Práticos](#exercícios-práticos)
+      - [Gerador de Senhas](#gerador-de-senhas)
+      - [Análise de Logs de Segurança](#análise-de-logs-de-segurança)
+      - [Contagem de Ocorrências](#contagem-de-ocorrências)
+      - [Simulador Brute-Force](#simulador-brute-force)
+   - [Objetivo da Aula](#objetivo-da-aula-4)
 
 
 
