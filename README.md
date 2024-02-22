@@ -613,3 +613,37 @@ puts "Tentativas: #{tentativa}"
 
 Esta aula tem como objetivo aprofundar o conhecimento dos alunos em Ruby, introduzindo conceitos avançados como funções ou métodos, arrays, hashes, e loops. Através de exemplos claros e exercícios práticos, os alunos aprendem a estruturar melhor seus programas, realizar operações complexas e manipular diferentes tipos de dados. Estes conceitos são fundamentais para a construção de programas mais sofisticados e eficientes.
 
+
+
+
+## Cheat Sheet de Ruby
+
+- `to_i` -> Converte um valor numa representação inteira.
+- `to_f` -> Converte um valor numa representação de ponto flutuante.
+- `to_s` -> Converte um valor numa representação de string.
+- `length` ou `size` -> Retorna o tamanho de uma string ou array.
+- `capitalize` -> Retorna uma cópia da string com o primeiro caractere em maiúscula.
+- `downcase` -> Retorna uma cópia da string convertida para minúsculas.
+- `upcase` -> Retorna uma cópia da string convertida para maiúsculas.
+- `reverse` -> Retorna uma cópia da string ou array invertido.
+- `split` -> Divide uma string num array de substrings com base num delimitador.
+- `join` -> Combina elementos de um array numa única string usando um separador.
+- `include?` -> Verifica se uma string contém outra substring ou se um elemento está presente num array.
+- `start_with?` -> Verifica se a string começa com uma letra ou palavra.
+- `each` -> Itera sobre cada elemento de uma coleção.
+- `3.times do <codigo> end` -> Executa um bloco de código 3 vezes.
+- `map` ou `collect` -> Cria um novo array com os resultados de aplicar uma função em cada elemento de uma coleção.
+- `select` ou `find_all` -> Retorna um novo array contendo os elementos de uma coleção que atendem a uma condição específica.
+- `reject` -> Retorna um novo array contendo os elementos de uma coleção que não atendem a uma condição específica.
+- `sort` -> Ordena os elementos de um array em ordem crescente.
+- `max` e `min` -> Retorna o maior e o menor valor em um array, respectivamente.
+- `first` e `last` -> Retorna o primeiro e o último elemento de um array, respectivamente.
+- `shuffle` -> Retorna uma cópia de um array com os elementos baralhados aleatoriamente.
+- `empty?` -> Verifica se uma coleção está vazia.
+- `zero?` -> Verifica se um número é zero.
+- `even?` -> Verifica se um número é par.
+- `odd?` -> Verifica se um número é ímpar.
+- `round` -> Arredonda um número para o valor inteiro mais próximo.
+- `rand` -> Gera um número aleatório.
+
+
