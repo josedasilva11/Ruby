@@ -35,6 +35,7 @@
       - [Contagem de Ocorrências](#contagem-de-ocorrências)
       - [Simulador Brute-Force](#simulador-brute-force)
    - [Objetivo da Aula](#objetivo-da-aula-4)
+6. [Cheat Sheet de Ruby](#cheat-sheet-de-ruby)
 
 
 
