@@ -37,6 +37,8 @@
    - [Objetivo da Aula](#objetivo-da-aula-4)
 6. [Cheat Sheet de Ruby](#cheat-sheet-de-ruby)
 
+7. [Teste Final](#teste-final)
+
 
 
 ## Conteúdo da Primeira Aula
@@ -647,4 +649,69 @@ Esta aula tem como objetivo aprofundar o conhecimento dos alunos em Ruby, introd
 - `round` -> Arredonda um número para o valor inteiro mais próximo.
 - `rand` -> Gera um número aleatório.
 
+## Teste Final
+
+```ruby
+# Exercício 1: Verifica a força da senha
+print "Insira uma senha: "
+senha = gets.chomp
+
+if senha.length >= 10
+  puts "A senha é forte."
+else
+  puts "A senha é fraca. Por favor, escolha uma senha com pelo menos 10 caracteres."
+end
+
+# Exercício 2: Verifica se um número é par
+print "Insira um número inteiro: "
+numero = gets.chomp.to_i
+
+if numero % 2 == 0
+  puts "O número #{numero} é par."
+else
+  puts "O número #{numero} é ímpar."
+end
+
+# Exercício 3: Conta o número de caracteres em uma string
+print "Insira uma string: "
+string_utilizador = gets.chomp
+
+puts "O número de caracteres na string é: #{string_utilizador.length}."
+
+# Exercício 4: Classifica senhas como fraca, média ou forte
+def classificar_senha(senha)
+  if senha.length < 8
+    "fraca"
+  elsif senha.length >= 8 && senha.length < 10
+    "média"
+  else
+    "forte"
+  end
+end
+
+print "Insira uma lista de senhas, separadas por vírgulas: "
+senhas = gets.chomp.split(',')
+
+senhas.each do |senha|
+  senha.strip!
+  puts "A senha '#{senha}' é #{classificar_senha(senha)}."
+end
+
+# Exercício 5: Verifica se um endereço de e-mail é válido
+print "Insira um endereço de e-mail: "
+email = gets.chomp
+
+if email.include?("@") && email.split('@').last.include?(".")
+  puts "O endereço de e-mail '#{email}' é válido."
+else
+  puts "O endereço de e-mail '#{email}' é inválido."
+end
+
+# Usando expressão regular para uma validação mais completa
+regex_email = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+if email.match?(regex_email)
+  puts "O endereço de e-mail '#{email}' é válido."
+else
+  puts "O endereço de e-mail '#{email}' é inválido."
+end
 
